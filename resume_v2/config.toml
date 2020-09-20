@@ -26,7 +26,5 @@ taxonomies = [
 
 [extra]
 # Anpu theme variables
-anpu_menu_links = [
-    { url = "$BASE_URL/about/", name = "About" },
-]
+anpu_menu_links = []
 anpu_date_format = "%e %B %Y"
