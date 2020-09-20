@@ -12,6 +12,8 @@ jobs:
     - name: shalzz/zola-deploy-action
       uses: shalzz/zola-deploy-action@v0.12.0
       env:
+        # Zola Repo dir
+        BUILD_DIR: resume_v2
         # Target branch
         PAGES_BRANCH: gh-pages
         # Provide personal access token
