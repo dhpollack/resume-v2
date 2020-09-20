@@ -11,6 +11,7 @@
     <meta name="description" content="{{ config.description }}">
 
     <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
+    <link rel="stylesheet" media="print" href="{{ get_url(path="no-print.css", trailing_slash=false) }}">
 
     {% if config.generate_feed %}
         <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
@@ -49,10 +50,14 @@
                 <footer>
                     {% set footer = get_page(path="dhpollack/zola/footer.md") %}
                     {{ footer.content | safe }}
+                    <div class="no-print">
+                        <br>
+                        <a href="david-pollack-resume.pdf" download><button>Download PDF</button></a>
+                    </div>
                 </footer>
             </article>
         </main>
-        <footer>
+        <footer class="no-print">
             <p>
                 © {{ config.title }} {{ now() | date(format="%Y") }}<br>
                 Powered by <a target="_blank" href="https://getzola.com/">Zola</a>, Theme <a target="_blank" href="https://github.com/zbrox/anpu">Anpu</a>.
