@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dhpollack.github.io/resume-v2/sitemap.xml

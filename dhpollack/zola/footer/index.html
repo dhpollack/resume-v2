@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title></title>
+    <meta name="description" content="Powered by Zola">
+
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;dhpollack.github.io&#x2F;resume-v2&#x2F;main.css">
+    <link rel="stylesheet" media="print" href="https:&#x2F;&#x2F;dhpollack.github.io&#x2F;resume-v2&#x2F;no-print.css">
+
+    
+
+    
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+        <header> 
+            <h1 class="site-header">
+                <a href="https:&#x2F;&#x2F;dhpollack.github.io&#x2F;resume-v2&#x2F;">David Pollack&#x27;s Resume</a>
+            </h1>
+            <nav>
+                
+                
+                
+            </nav>
+        </header>
+        <main id="main" tabindex="-1">
+            <article class="post">
+                <header>
+                    <h3></h3>
+                </header>
+                <div class="content">
+                    
+                    
+
+<article class="post">
+    <header>
+        <h1></h1>
+    </header>
+    <div class="content">
+        <h2 id="experience">Experience</h2>
+<h3 id="machine-learning-engineer-solvemate-gmbh">Machine Learning Engineer @ Solvemate GmbH</h3>
+<h5 id="berlin-02-2020-to-present">Berlin - 02/2020 to Present</h5>
+<p>I am leading the project to implement free-text input into the existing decision tree-based chatbot framework, which is the most requested feature by our customers. This microservice can be configured to use different methods of word vectorization and text preprocessing. I wrote a custom solution to benchmark the different models and preprocessors used by this microservice. Additionally, I have integrated this microservice into our <a href="https://kubernetes.io/">Kubernetes</a> architecture. This microservice utilizes a modern Python stack based on <a href="https://fastapi.tiangolo.com/">fastAPI</a> and <a href="https://pydantic-docs.helpmanual.io/">Pydantic</a> for serving and a modern testing / linting suite (fully pytest-based testing, <a href="https://github.com/PyCQA/isort">isort</a>, <a href="https://github.com/psf/black">black</a>, flake8).</p>
+<p>Other projects that I am working on include customer feedback analysis and text anonymization. I wrote a highly configurable research tool based on <a href="https://hydra.cc">Hydra</a>, which can use word-vector- as well as transformer-based models for feedback analysis. For text anonymization, we are exploring the use of <a href="https://github.com/microsoft/presidio">Microsoft's presidio</a> library. In order to apply this to our use case, I made a <a href="https://github.com/microsoft/presidio/pull/312">large OSS-contribution</a> to the project to completely rewrite the python analyzer engine. The primary feature that I added was the ability to use multiple language models at once, which enabled multilingual capabilities to the library. But I also completely modernized their unit tests, optimized the code, and removed a lot of hard-coded variables.</p>
+<p>From a software engineering / dev-ops perspective, I have also become quite proficient with web frameworks (flask and fastAPI) and have learned to use Kubernetes with automated deployment via <a href="https://helm.sh/">Helm</a>.</p>
+<h3 id="machine-learning-engineer-i2x-gmbh">Machine Learning Engineer @ i2x GmbH</h3>
+<h5 id="berlin-04-2019-to-02-2020">Berlin - 04/2019 to 02/2020</h5>
+<p>I primarily worked on NLP projects at i2x. This included coordinating with a team of over 15 labelers to create datasets from our raw data, creating tooling to manage the data pipeline from raw data to production datasets, and even performing labeling myself (all data was German). For these completed datasets, I wrote tooling to train models and gather metrics with libraries like huggingface transformers (BERT), fasttext, sklearn and others. I integrated pytorch models into our GRPC production, which was previously tensorflow only. Another project that I worked on was a sentence level similarity search using word embeddings and approximate nearest neighbors, tool capable of searching tens of millions of utterances in milliseconds. This project was also dockerized and GRPC-based for easy of deployment.</p>
+<p>Although my primarily responsibilities were NLP, I experimented with several newer ASR systems (fairseq, wav2letter, and NVIDIA’s NeMo) and even contributed several PRs to NeMo. Regarding general software development, code optimizations was a task that I excelled at specifically, I often built optimized dataloaders that could process data online during training, which sped up training and greatly reduced memory requirements for large datasets. I also believe in contributing back to upstream OSS projects and had PRs accepted at huggingface transformers, facebook’s FBGEMM, pytorch, pytorch tutorials, and PyThaiNLP.</p>
+<p>Lastly, due to my proficiency with linux, I was the ML team’s de facto systems administrator for our in-house multi-GPU dev machines, so I’m proficient with the *nix cli ecosystem.</p>
+<h3 id="machine-learning-fellow-fellowship-ai">Machine Learning Fellow @ Fellowship.ai</h3>
+<h5 id="berlin-01-2019-to-04-2019">Berlin - 01/2019 to 04/2019</h5>
+<p>Once again, I developed an end-to-end solution to do image classification on a fashion dataset. We achieved state of the art results in the task classifying a fashion style from the Fashion14 dataset. In preparation for a weekly reading group, I optimized an implementation of memory networks on the babi question answer dataset. Worked on implementing semi-supervised semantic segmentation utilizing Deep Extreme Cut and DeepLab-v3+.</p>
+<h3 id="lead-developer-pytorch-audio">Lead Developer @ PyTorch Audio</h3>
+<h5 id="berlin-06-2017-to-01-2019">Berlin - 06/2017 to 01/2019</h5>
+<p>I was the lead developer for PyTorch’s official audio loading library, torchaudio, and continue to be involved in the project. I work directly with the PyTorch team at Facebook on this project. I have implemented input error checking testing, audio datasets, variable length input collate functions, audio IO funcationality via SoX (Sound eXchange), and added audio transformations (both implemented directly in PyTorch and using PyTorch’s c++ hooks for SoX’s effects chain). Additionally, I transferred the main PyTorch project’s code flaking and documentation standards to this project. In October 2018, I was invited to the PyTorch developer conference for my contributions to the project.  I continue to follow the project and contribute when I can.</p>
+<h3 id="machine-learning-engineer-student-job-yeay-gmbh">Machine Learning Engineer (Student Job) @ YEAY GmbH</h3>
+<h5 id="berlin-01-2018-to-06-2018">Berlin - 01/2018 to 06/2018</h5>
+<p>My primary role was to use object recognition on videos to identify different classes of clothing. I utilized a Mask R-CNN-based network with custom additions for blur detection to select the clearest frames. Data prep included finding an appropriate dataset, writing scripts to translate between various annotation formats (PASCAL, COCO, YOLO) and add missing fields such as segmentation naively or algorithmically (i.e. GrabCut). Additionally, I dockerized my solution to make it more portable.</p>
+<h3 id="co-founder-and-cto-cygnus-association-management">Co-Founder and CTO @ Cygnus Association Management</h3>
+<h5 id="atlanta-remote-08-2014-to-01-2019">Atlanta (Remote) - 08/2014 to 01/2019</h5>
+<p>Founded an real estate management company to manage residential and commercial properties in Atlanta, GA. Responsible for the organization’s technological solutions, including but not limited to Google Apps infrastructure, company web presence, and payment services. Collaborate with other cofounders regarding all strategic aspects of the company. Work 100% remotely.</p>
+<h3 id="senior-consultant-navigant">Senior Consultant @ Navigant</h3>
+<h5 id="atlanta-09-2006-to-04-2013">Atlanta - 09/2006 to 04/2013</h5>
+<p>Completed re-underwrites of over 750 residential home loans for several of the TBTF (Too Big To Fail) US banks in disputes related to the US housing crisis. Managed and reviewed team members’ work product. Developed software to automate repetitive tasks that cut the per-loan prep time by an order of a magnitude. Promoted in 2007 and 2010.</p>
+<h2 id="education">Education</h2>
+<ul>
+<li>Master of Science in Economics and Management Science from Humboldt Universität in 2018</li>
+<li>Bachelors of Arts in Economics from Emory University in 2005</li>
+</ul>
+<h2 id="languages">Languages</h2>
+<ul>
+<li>English (native speaker)</li>
+<li>German (professional working proficiency - C1)</li>
+</ul>
+
+    </div>
+
+    
+    <div class="article-info">
+        
+        <div class="article-taxonomies">
+            
+            
+        </div>
+    </div>
+
+</article>
+
+
+                </div>
+                <footer>
+                    
+                    <p>| Braunschweiger Straße 54, 12055 Berlin | +49 152 0476 3223 | david@sologourmand.com |</p>
+
+                    <div class="no-print">
+                        <br>
+                        <a href="david-pollack-resume.pdf" download><button>Download PDF</button></a>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        <footer class="no-print">
+            <p>
+                © David Pollack&#x27;s Resume 2020<br>
+                Powered by <a target="_blank" href="https://getzola.com/">Zola</a>, Theme <a target="_blank" href="https://github.com/zbrox/anpu">Anpu</a>.
+            </p>
+            <p>
+                
+                
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
