@@ -1,0 +1,6 @@
+[submodule "resume_v2/themes/anpu"]
+	path = resume_v2/themes/anpu
+	url = https://github.com/zbrox/anpu-zola-theme
+[submodule "resume_v2/submodules/dhpollack"]
+	path = resume_v2/content/dhpollack
+	url = git@github.com:dhpollack/dhpollack.git
